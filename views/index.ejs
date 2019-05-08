@@ -1,0 +1,19 @@
+<%
+function GetBackground() {
+    var files = fs.readdirSync(path.join(baseDir, 'public/img/bg'));
+    return '/assets/img/bg/'+files[Math.floor(Math.random()*files.length)];
+}
+
+function GetFact() {
+    var chuckNorris = jsonfile.readFileSync(path.join(baseDir, 'src/json/chuck-norris.json'));
+    return chuckNorris[Math.floor(Math.random()*chuckNorris.length)].fact;
+}
+%>
+<section class="hero is-fullheight">
+    <div class="hero-body index-bg-img" style="background-image: url('<%= GetBackground() %>')">
+        <div class="container has-text-centered">
+            <h1 class="title fact-glow"><%= GetFact() %></h1>
+        </div>
+    </div>
+</section>
+<%- contentFor('pageTitle') %>Accueil

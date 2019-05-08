@@ -1,0 +1,695 @@
+[
+    {
+        "id": "1",
+        "fact": "Chuck Norris a déjà compté jusqu'à l'infini. Deux fois.",
+        "date": "1373297343",
+        "vote": "189392",
+        "points": "866848"
+    },
+    {
+        "id": "9355",
+        "fact": "Google, c'est le seul endroit où tu peux taper Chuck Norris...",
+        "date": "1373297340",
+        "vote": "136456",
+        "points": "607433"
+    },
+    {
+        "id": "2",
+        "fact": "Certaines personnes portent un pyjama Superman. Superman porte un pyjama Chuck Norris.",
+        "date": "1373297346",
+        "vote": "128335",
+        "points": "551200"
+    },
+    {
+        "id": "82",
+        "fact": "Chuck Norris donne fréquemment du sang à la Croix-Rouge. Mais jamais le sien.",
+        "date": "1373296250",
+        "vote": "118583",
+        "points": "501810"
+    },
+    {
+        "id": "10705",
+        "fact": "Chuck Norris et Superman ont fait un bras de fer, le perdant devait mettre son slip par dessus son pantalon.",
+        "date": "1373297355",
+        "vote": "113971",
+        "points": "501187"
+    },
+    {
+        "id": "66",
+        "fact": "Chuck Norris ne se mouille pas, c'est l'eau qui se Chuck Norris.",
+        "date": "1373297362",
+        "vote": "116324",
+        "points": "490773"
+    },
+    {
+        "id": "106",
+        "fact": "Chuck Norris peut gagner une partie de puissance 4 en trois coups.",
+        "date": "1373297368",
+        "vote": "107245",
+        "points": "461426"
+    },
+    {
+        "id": "19973",
+        "fact": "Un jour, Chuck Norris a perdu son alliance. Depuis c'est le bordel dans les terres du milieu...",
+        "date": "1373297384",
+        "vote": "102660",
+        "points": "458805"
+    },
+    {
+        "id": "73",
+        "fact": "Jesus Christ est né en 1940 avant Chuck Norris.",
+        "date": "1373297391",
+        "vote": "105222",
+        "points": "445848"
+    },
+    {
+        "id": "10",
+        "fact": "Chuck Norris ne porte pas de montre. Il décide de l'heure qu'il est.",
+        "date": "1373297395",
+        "vote": "104807",
+        "points": "435723"
+    },
+    {
+        "id": "180",
+        "fact": "La seule chose qui arrive à la cheville de Chuck Norris... c'est sa chaussette.",
+        "date": "1373297400",
+        "vote": "102279",
+        "points": "429332"
+    },
+    {
+        "id": "246",
+        "fact": "Chuck Norris fait pleurer les oignons.",
+        "date": "1373297406",
+        "vote": "99964",
+        "points": "418213"
+    },
+    {
+        "id": "8",
+        "fact": "Dieu a dit: que la lumiere soit! et Chuck Norris répondit : On dit s'il vous plait.",
+        "date": "1373297412",
+        "vote": "98202",
+        "points": "408616"
+    },
+    {
+        "id": "4",
+        "fact": "Chuck Norris peut diviser par zéro.",
+        "date": "1373297425",
+        "vote": "98323",
+        "points": "405137"
+    },
+    {
+        "id": "398",
+        "fact": "Chuck Norris comprend Jean-Claude Van Damme.",
+        "date": "1373297429",
+        "vote": "97174",
+        "points": "403237"
+    },
+    {
+        "id": "5",
+        "fact": "Chuck Norris joue à la roulette russe avec un chargeur plein.",
+        "date": "1373297440",
+        "vote": "92974",
+        "points": "397412"
+    },
+    {
+        "id": "3",
+        "fact": "Chuck Norris sait parler le braille.",
+        "date": "1373297434",
+        "vote": "94131",
+        "points": "397261"
+    },
+    {
+        "id": "152",
+        "fact": "Chuck Norris a un jour avalé un paquet entier de somnifères. Il a cligné des yeux.",
+        "date": "1373297451",
+        "vote": "94447",
+        "points": "394261"
+    },
+    {
+        "id": "267",
+        "fact": "Quand Google ne trouve pas quelque chose, il demande à Chuck Norris.",
+        "date": "1373297445",
+        "vote": "93800",
+        "points": "393451"
+    },
+    {
+        "id": "20",
+        "fact": "Les suisses ne sont pas neutres, ils attendent de savoir de quel coté Chuck Norris se situe.",
+        "date": "1373297455",
+        "vote": "93737",
+        "points": "390329"
+    },
+    {
+        "id": "12",
+        "fact": "Il n'y a pas de théorie de l'évolution. Juste une liste d'espèces que Chuck Norris autorise à survivre.",
+        "date": "1373297465",
+        "vote": "88531",
+        "points": "368188"
+    },
+    {
+        "id": "3693",
+        "fact": "Chuck Norris peut encercler ses ennemis. Tout seul.",
+        "date": "1373297495",
+        "vote": "83160",
+        "points": "367329"
+    },
+    {
+        "id": "11",
+        "fact": "Chuck Norris est la raison pour laquelle Charlie se cache.",
+        "date": "1373297473",
+        "vote": "87948",
+        "points": "365547"
+    },
+    {
+        "id": "127",
+        "fact": "Chuck Norris a déjà été sur Mars, c'est pour cela qu'il n'y a pas de signes de vie là bas.",
+        "date": "1373297480",
+        "vote": "87235",
+        "points": "364381"
+    },
+    {
+        "id": "28",
+        "fact": "Chuck Norris mesure son pouls sur l'échelle de Richter.",
+        "date": "1373297505",
+        "vote": "87023",
+        "points": "359969"
+    },
+    {
+        "id": "13638",
+        "fact": "Quand Chuck Norris s\u0092est mis au judo, David Douillet s\u0092est mis aux pièces jaunes.",
+        "date": "1373297489",
+        "vote": "82965",
+        "points": "357412"
+    },
+    {
+        "id": "35",
+        "fact": "Chuck Norris connait la dernière décimale de Pi.",
+        "date": "1373297506",
+        "vote": "84453",
+        "points": "350437"
+    },
+    {
+        "id": "57",
+        "fact": "Dans une pièce normale, il y a en moyenne 1242 objets avec lesquels Chuck Norris peut vous tuer, en incluant la pièce elle même.",
+        "date": "1373297535",
+        "vote": "83527",
+        "points": "350400"
+    },
+    {
+        "id": "142",
+        "fact": "Si Chuck Norris avait été pris dans le film \"300\" il l'aurait renommé en \"1\".",
+        "date": "1373297546",
+        "vote": "83876",
+        "points": "349388"
+    },
+    {
+        "id": "84",
+        "fact": "Un jour, au restaurant, Chuck Norris a commandé un steak. Et le steak a obéi.",
+        "date": "1373297555",
+        "vote": "85209",
+        "points": "349209"
+    },
+    {
+        "id": "150",
+        "fact": "Pour certains hommes le testicule gauche est plus large que le testicule droit, chez Chuck Norris, chaque testicule est plus large que l'autre.",
+        "date": "1373296410",
+        "vote": "80210",
+        "points": "338148"
+    },
+    {
+        "id": "30742",
+        "fact": "Chuck Norris est contre les radars automatiques : ça l'éblouit lorsqu'il fait du vélo",
+        "date": "1373296415",
+        "vote": "74122",
+        "points": "329872"
+    },
+    {
+        "id": "16244",
+        "fact": "Chuck Norris n'utilise pas de suppositoire. Les voies du seigneur sont impénétrables.",
+        "date": "1373296423",
+        "vote": "73834",
+        "points": "324275"
+    },
+    {
+        "id": "241",
+        "fact": "Chuck Norris peut t'étrangler avec un téléphone sans fil.",
+        "date": "1373296420",
+        "vote": "74430",
+        "points": "324171"
+    },
+    {
+        "id": "14360",
+        "fact": "Chuck Norris est mort depuis 10 ans, mais la Mort n'a pas encore trouvé le courage d'aller lui dire.",
+        "date": "1373296437",
+        "vote": "72541",
+        "points": "320341"
+    },
+    {
+        "id": "570",
+        "fact": "Chuck Norris mange les emballages des carambars. On ne blague pas avec Chuck Norris..",
+        "date": "1373296430",
+        "vote": "73820",
+        "points": "315846"
+    },
+    {
+        "id": "17881",
+        "fact": "Chuck Norris peut remonter le terrain de foot dans Olive et Tom en moins d'un épisode.",
+        "date": "1373296444",
+        "vote": "71818",
+        "points": "313935"
+    },
+    {
+        "id": "8156",
+        "fact": "Chuck Norris peut taguer le mur du son.",
+        "date": "1373296451",
+        "vote": "72667",
+        "points": "312435"
+    },
+    {
+        "id": "10495",
+        "fact": "Chuck Norris peut te faire passer un sale quart d'heure en 8 minutes.",
+        "date": "1373296456",
+        "vote": "69794",
+        "points": "301954"
+    },
+    {
+        "id": "404",
+        "fact": "Quand Chuck Norris pisse face au vent, le vent péfère changer de direction.",
+        "date": "1373296460",
+        "vote": "69950",
+        "points": "301544"
+    },
+    {
+        "id": "11455",
+        "fact": "Chuck Norris aime la vie. Une chance pour elle.",
+        "date": "1373296470",
+        "vote": "66538",
+        "points": "294154"
+    },
+    {
+        "id": "22889",
+        "fact": "Chuck Norris sera déclaré recordman du lancer du poids le jour où le poids retombera.",
+        "date": "1373296485",
+        "vote": "65371",
+        "points": "293962"
+    },
+    {
+        "id": "18396",
+        "fact": "Chuck Norris a fini Super Mario Bros sans sauter.",
+        "date": "1373296477",
+        "vote": "66627",
+        "points": "292388"
+    },
+    {
+        "id": "16759",
+        "fact": "Un jour, Chuck Norris a voulu enseigner le Jeet Kun Do à de jeunes handicapés mentaux. C'est ainsi qu'est née la Tecktonic.",
+        "date": "1373296467",
+        "vote": "67333",
+        "points": "291112"
+    },
+    {
+        "id": "9618",
+        "fact": "Un jour Chuck Norris a dit \"Va voir la-bas si j'y suis\" ....et il y était...",
+        "date": "1373296490",
+        "vote": "65123",
+        "points": "289490"
+    },
+    {
+        "id": "15448",
+        "fact": "Quand la tartine de Chuck Norris tombe, la confiture change de côté.",
+        "date": "1373296495",
+        "vote": "66015",
+        "points": "284396"
+    },
+    {
+        "id": "7315",
+        "fact": "Chuck Norris peut faire des tacles au babyfoot",
+        "date": "1373296500",
+        "vote": "65493",
+        "points": "282322"
+    },
+    {
+        "id": "9959",
+        "fact": "A l'école, c'est le professeur qui devait lever la main pour parler a Chuck Norris.",
+        "date": "1373296504",
+        "vote": "65077",
+        "points": "281177"
+    },
+    {
+        "id": "38468",
+        "fact": "Chuck Norris va régulièrement voir des matchs du PSG pour ne pas oublier ce qu'est la défaite.",
+        "date": "1373296508",
+        "vote": "63801",
+        "points": "280096"
+    },
+    {
+        "id": "245",
+        "fact": "Chuck Norris est capable de laisser un message avant le bip sonore.",
+        "date": "1373296514",
+        "vote": "65998",
+        "points": "277938"
+    },
+    {
+        "id": "71",
+        "fact": "Un aigle peut lire un journal à 1400 mètres de distance. Chuck Norris peut tourner la page.",
+        "date": "1373296534",
+        "vote": "61540",
+        "points": "265445"
+    },
+    {
+        "id": "114",
+        "fact": "La force de gravité, c\u0092est ce qui fait que la terre tient sous Chuck Norris.",
+        "date": "1373296519",
+        "vote": "64211",
+        "points": "264321"
+    },
+    {
+        "id": "23747",
+        "fact": "Un jour, Chuck Norris a fait la blague de \"j'ai volé ton nez\" à Mickael Jackson...",
+        "date": "1373296528",
+        "vote": "59378",
+        "points": "263419"
+    },
+    {
+        "id": "366",
+        "fact": "Dieu voulait créer l'univers en 10 jours. Chuck Norris lui en a donné 6.",
+        "date": "1373296538",
+        "vote": "61830",
+        "points": "260277"
+    },
+    {
+        "id": "3622",
+        "fact": "Chuck Norris enfant n'envoyait pas de lettres au Père Noël. Il envoyait des ultimatums.",
+        "date": "1373296547",
+        "vote": "62018",
+        "points": "259702"
+    },
+    {
+        "id": "1902",
+        "fact": "Chuck Norris peut voter (++++) pour un Chuck Norris Fact.",
+        "date": "1373296522",
+        "vote": "60347",
+        "points": "259025"
+    },
+    {
+        "id": "215",
+        "fact": "Jésus a marché sur l'eau, mais Chuck Norris a marché sur Jésus.",
+        "date": "1373296551",
+        "vote": "60103",
+        "points": "254993"
+    },
+    {
+        "id": "98",
+        "fact": "Une larme de Chuck Norris peut guérir du cancer, malheureusement Chuck Norris ne pleure pas.",
+        "date": "1373296557",
+        "vote": "60543",
+        "points": "254437"
+    },
+    {
+        "id": "5948",
+        "fact": "J.C.Van Damme casse des noix entre ses fesses. Chuck Norris Casse J.C.Van Damme de le même façon.",
+        "date": "1373296563",
+        "vote": "58859",
+        "points": "253265"
+    },
+    {
+        "id": "4465",
+        "fact": "Chuck Norris a tué son ombre. On ne suit pas Chuck Norris ...",
+        "date": "1373296615",
+        "vote": "59007",
+        "points": "252627"
+    },
+    {
+        "id": "35793",
+        "fact": "Chuck Norris ne ment pas, c'est la vérité qui se trompe.",
+        "date": "1373295537",
+        "vote": "54560",
+        "points": "252494"
+    },
+    {
+        "id": "3139",
+        "fact": "Maitre Yoda a perdu la vie le jour où il a appelé Chuck Norris \"Norris Chuck\".",
+        "date": "1373296575",
+        "vote": "57949",
+        "points": "250728"
+    },
+    {
+        "id": "3612",
+        "fact": "Parmi les accessoires du couteau suisse de Chuck Norris, il y a Mac Gyver.",
+        "date": "1373296582",
+        "vote": "57697",
+        "points": "247158"
+    },
+    {
+        "id": "39686",
+        "fact": "Chuck Norris a fini son forfait illimité.",
+        "date": "1373277881",
+        "vote": "53982",
+        "points": "242668"
+    },
+    {
+        "id": "2743",
+        "fact": "En France, on dit aux enfants que s'ils ne veulent pas manger, le grand méchant loup les bouffera tout crus. Aux Etats-Unis, c'est de Chuck Norris qu'on leur parle. C'est pour ça qu'il y a tant d'obèses.",
+        "date": "1373285594",
+        "vote": "55556",
+        "points": "242224"
+    },
+    {
+        "id": "6057",
+        "fact": "Chuck Norris a inventé l'écriture pour faire comprendre a un sourd qu'il allait lui péter la gueule.",
+        "date": "1191158308",
+        "vote": "55524",
+        "points": "240218"
+    },
+    {
+        "id": "8219",
+        "fact": "Chuck Norris a écrasé une vieille dame avec son pick-up. La famille s'est excusée.",
+        "date": "1373240619",
+        "vote": "55488",
+        "points": "239763"
+    },
+    {
+        "id": "35578",
+        "fact": "Dans GTA San Andreas, si vous avez 7 étoiles, c'est que vous êtes recherché par Chuck Norris.",
+        "date": "1373240663",
+        "vote": "51776",
+        "points": "234804"
+    },
+    {
+        "id": "2596",
+        "fact": "Quand Chuck Norris passe devant un miroir, il n'y a pas de reflet: il n'y a qu'un seul Chuck Norris.",
+        "date": "1373240654",
+        "vote": "55408",
+        "points": "234097"
+    },
+    {
+        "id": "17139",
+        "fact": "Chuck Norris a déjà vu Marcel dans \"C'est pas sorcier\" !",
+        "date": "1373240671",
+        "vote": "53460",
+        "points": "233011"
+    },
+    {
+        "id": "1746",
+        "fact": "Des gamins pissent dans la neige pour écrire leur nom. Chuck Norris le fait dans le béton armé.",
+        "date": "1373240680",
+        "vote": "54202",
+        "points": "232461"
+    },
+    {
+        "id": "8003",
+        "fact": "Dieu dit : \"Tu ne tueras point\" Et Chuck Norris répondit : \"on parie?\"",
+        "date": "1373286233",
+        "vote": "53992",
+        "points": "232340"
+    },
+    {
+        "id": "4503",
+        "fact": "Si Luke a pleuré quand Dark Vador lui a dit qu'il était son père, c'est parce qu'il esperait être le fils de Chuck Norris.",
+        "date": "1373233218",
+        "vote": "55194",
+        "points": "232078"
+    },
+    {
+        "id": "214",
+        "fact": "Chuck Norris ne croit pas en Dieu, mais Dieu croit en Chuck Norris.",
+        "date": "1373240692",
+        "vote": "54678",
+        "points": "230891"
+    },
+    {
+        "id": "314",
+        "fact": "Chuck Norris a perdu sa virginité avant son père.",
+        "date": "1373240705",
+        "vote": "53072",
+        "points": "229792"
+    },
+    {
+        "id": "31033",
+        "fact": "Windows ne demande jamais à Chuck Norris d'envoyer le rapport d'erreur. Bill Gates vient le chercher lui même, avec toutes ses excuses.",
+        "date": "1373284460",
+        "vote": "49229",
+        "points": "223899"
+    },
+    {
+        "id": "86",
+        "fact": "Quand Chuck Norris utilise Windows, il ne plante pas.",
+        "date": "0",
+        "vote": "55084",
+        "points": "221886"
+    },
+    {
+        "id": "125",
+        "fact": "Chuck Norris peut claquer une porte fermée...",
+        "date": "0",
+        "vote": "53324",
+        "points": "218842"
+    },
+    {
+        "id": "395",
+        "fact": "Le calendrier de Chuck Norris passe du 31 mars au 2 avril. Personne ne fait de blague à Chuck.",
+        "date": "1373240725",
+        "vote": "52010",
+        "points": "218555"
+    },
+    {
+        "id": "100889",
+        "fact": "Chuck Norris n'a pas de père. On ne nique pas la mère de Chuck Norris.",
+        "date": "1373283347",
+        "vote": "46968",
+        "points": "217018"
+    },
+    {
+        "id": "51",
+        "fact": "Un film de Bruce Lee montre Chuck Norris se faire battre par Bruce Lee. C'est là l'effet spécial le plus cher de toute l'histoire du cinéma.",
+        "date": "0",
+        "vote": "50288",
+        "points": "212888"
+    },
+    {
+        "id": "222",
+        "fact": "Chuck Norris peut applaudir d'une seule main.",
+        "date": "0",
+        "vote": "50934",
+        "points": "212403"
+    },
+    {
+        "id": "1479",
+        "fact": "Chuck Norris peut supprimer la corbeille",
+        "date": "1373233283",
+        "vote": "50515",
+        "points": "211479"
+    },
+    {
+        "id": "6832",
+        "fact": "Chuck Norris a réussi à placer \"Anticonstitutionnellement\" en mot compte triple dans une grille de sudoku.",
+        "date": "1191453544",
+        "vote": "48202",
+        "points": "209380"
+    },
+    {
+        "id": "400",
+        "fact": "Si ça a le goût du poulet, l'odeur du poulet et ça ressemble à du poulet, mais que Chuck Norris te dit que c'est du mouton, alors cherche pas, c'est du mouton.",
+        "date": "0",
+        "vote": "49363",
+        "points": "209300"
+    },
+    {
+        "id": "124315",
+        "fact": "Chuck Norris ne sait pas à quoi ressemble Nicolas Sarkozy, en effet Chuck Norris ne baisse jamais les yeux.",
+        "date": "1373286063",
+        "vote": "44418",
+        "points": "206935"
+    },
+    {
+        "id": "5287",
+        "fact": "Chuck Norris mesure très précisément 1 Chuck Norris.",
+        "date": "1190648058",
+        "vote": "48767",
+        "points": "206650"
+    },
+    {
+        "id": "684",
+        "fact": "C'est lorsque Mickael Jackson a croisé Chuck Norris qu'il est devenu blanc.",
+        "date": "0",
+        "vote": "49295",
+        "points": "206396"
+    },
+    {
+        "id": "1154",
+        "fact": "Chuck Norris est en couleur sur les photos Noir et Blanc.",
+        "date": "0",
+        "vote": "49158",
+        "points": "205948"
+    },
+    {
+        "id": "5951",
+        "fact": "Hitler s'est suicidé parce qu'on lui a dit que Chuck Norris était Juif .",
+        "date": "1373292732",
+        "vote": "46789",
+        "points": "205897"
+    },
+    {
+        "id": "25683",
+        "fact": "Chuck norris sait ou se trouve Ornicar.",
+        "date": "1203080290",
+        "vote": "46115",
+        "points": "205717"
+    },
+    {
+        "id": "193",
+        "fact": "La mer morte ne l'était pas avant de connaître Chuck Norris",
+        "date": "1373242196",
+        "vote": "49756",
+        "points": "205388"
+    },
+    {
+        "id": "47517",
+        "fact": "Chuck Norris a déja frôlé la mort....elle ne s'en est jamais remise.",
+        "date": "1373240840",
+        "vote": "44866",
+        "points": "205273"
+    },
+    {
+        "id": "80670",
+        "fact": "Chuck Norris est le seul homme à posséder une bible dédicacée.",
+        "date": "1373240851",
+        "vote": "44498",
+        "points": "204641"
+    },
+    {
+        "id": "11015",
+        "fact": "Lorsque Chuck Norris crie au bord d'une falaise, il n'y a pas d'écho. On ne répond pas à Chuck Norris.",
+        "date": "1373240808",
+        "vote": "47994",
+        "points": "204069"
+    },
+    {
+        "id": "58375",
+        "fact": "Les ennemis de Chuck Norris lui disent souvent d'aller au diable. Le Diable aimerait bien qu'ils arrêtent.",
+        "date": "1373284464",
+        "vote": "43796",
+        "points": "202234"
+    },
+    {
+        "id": "16899",
+        "fact": "Si Jesus n'est pas descendu sur terre depuis 2000 ans, c'est parce qu'il doit du fric à Chuck Norris.",
+        "date": "1200574697",
+        "vote": "45666",
+        "points": "202167"
+    },
+    {
+        "id": "14421",
+        "fact": "Si Chuck Norris attaque l'empire, l'empire ne contre attaque pas.",
+        "date": "1373282222",
+        "vote": "47089",
+        "points": "201768"
+    },
+    {
+        "id": "14132",
+        "fact": "Chuck Norris a finit Pokemon sans AUCUN pokemon. Chuck Norris n'a besoin de personne.",
+        "date": "1194203115",
+        "vote": "45487",
+        "points": "199831"
+    }
+]

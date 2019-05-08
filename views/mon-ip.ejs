@@ -1,0 +1,88 @@
+<%
+var headers = req.headers;
+//var ip = JSON.stringify(req.ip);
+var ip = req.ip;
+var geo = geoip.lookup(req.ip);
+var country = geo ? geo.country: "Unknown";
+var region = geo ? geo.region: "Unknown";
+
+function displayHeaders() {
+    var out = '';
+    for (var key in headers) {
+        out = out + '<tr><td>' + key + '</td><td>' + headers[key] + '</td></tr>';
+    }
+    return out;
+}
+%>
+<section class="views-margin-top hero is-primary">
+    <div class="hero-body">
+        <div class="container is-large">
+            <h1 class="title">Mon IP</h1>
+            <h2 class="subtitle">Affiche votre IP et d'autres informations</h2>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li>
+                    <a href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Accueil</span>
+                    </a>
+                </li>
+                <li class="is-active">
+                    <a href="#">
+                        <span class="icon is-small">
+                            <i class="fas fa-network-wired" aria-hidden="true"></i></i>
+                        </span>
+                        <span>Mon IP</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>
+<section class="container margin-top-15">
+    <div class="box">
+        <article class="media">
+            <div class="media-content">
+                <div class="content">
+                    <p><strong>IP:</strong> <%= ip %></p>
+                    <p><strong>Pays:</strong> <%= country %></p>
+                    <p><strong>Région:</strong> <%= region %></p>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="box">
+        <article class="media">
+            <div class="media-content">
+                <div class="content">
+                    <p><strong>Headers:</strong></p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="has-text-grey-lighter">Nom</th>
+                                <th class="has-text-grey-lighter">Valeur</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th class="has-text-grey-lighter">Nom</th>
+                                <th class="has-text-grey-lighter">Valeur</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <%- displayHeaders() %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<%- contentFor('pageTitle') %>Mon IP

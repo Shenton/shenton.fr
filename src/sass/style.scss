@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+//Font
+//@import url('//fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('//fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
+@import url('//fonts.googleapis.com/css?family=Roboto:400,700');
+
+
+// Bulma
+$family-monospace: 'Source Code Pro', monospace;
+$family-sans-serif: 'Roboto', sans-serif;
+
+$bodybg: #1b1a19;
+$navbarbg: rgba(10, 17, 19, 0.75);
+$primary: #0eb2bb;
+$link: #c77c0d;
+$text: #cccccc;
+$link-hover: #1f1f1f;
+$strong-color: $text;
+$body-background-color: $bodybg;
+$title-color: $bodybg;
+
+$navbar-background-color: $navbarbg;
+$navbar-item-hover-background-color: transparent;
+$navbar-dropdown-background-color: $navbarbg;
+$navbar-dropdown-item-hover-background-color: transparent;
+$navbar-dropdown-item-hover-color: $link;
+$navbar-dropdown-border-top: 2px solid $primary;
+$navbar-item-color: $text;
+$navbar-dropdown-boxed-shadow: 0 8px 8px rgba($primary, 0.1), 0 0 0 1px rgba($primary, 0.1);
+
+$box-color: $text;
+$box-background-color: #353331;
+$box-shadow: 0 2px 3px rgba($primary, 0.1), 0 0 0 1px rgba($primary, 0.1);
+
+$divider-content-background-color: transparent;
+$divider-color: $primary;
+$divider-background-color: $primary;
+
+$table-color: $box-color;
+$table-background-color: $box-background-color;
+
+$modal-content-width: 1200px;
+$modal-card-head-background-color: $primary;
+$modal-card-body-background-color: $bodybg;
+$pre-background: $bodybg;
+
+//@import "../../node_modules/bulma/bulma.sass";
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+
+@import "../../node_modules/bulma/sass/base/_all.sass";
+
+@import "../../node_modules/bulma/sass/components/breadcrumb.sass";
+@import "../../node_modules/bulma/sass/components/level.sass";
+@import "../../node_modules/bulma/sass/components/modal.sass";
+@import "../../node_modules/bulma/sass/components/navbar.sass";
+
+@import "../../node_modules/bulma/sass/elements/box.sass";
+@import "../../node_modules/bulma/sass/elements/button.sass";
+@import "../../node_modules/bulma/sass/elements/container.sass";
+@import "../../node_modules/bulma/sass/elements/content.sass";
+@import "../../node_modules/bulma/sass/elements/image.sass";
+@import "../../node_modules/bulma/sass/elements/table.sass";
+@import "../../node_modules/bulma/sass/elements/title.sass";
+
+@import "../../node_modules/bulma/sass/grid/tiles.sass";
+
+@import "../../node_modules/bulma/sass/layout/_all.sass";
+
+@import "../../node_modules/bulma-extensions/bulma-divider/src/sass/index.sass";
+
+// Rewrite Bulma
+.hero.is-primary .title {
+    color: $grey-darker;
+}
+
+.hero.is-primary .subtitle {
+    color: $grey-darker;
+}
+
+pre {
+    padding: 0;
+}
+
+// Personal styles
+.index-bg-img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@keyframes fact-glow-key {
+    from {
+        text-shadow: 0 0 8px $text, 0 0 12px $text, 0 0 16px $text, 0 0 20px $primary, 0 0 24px $primary, 0 0 28px $primary, 0 0 32px $primary, 0 0 36px $primary;
+    }
+    to {
+        text-shadow: 0 0 4px $text, 0 0 8px $text, 0 0 12px $text, 0 0 16px $primary, 0 0 20px $primary, 0 0 24px $primary, 0 0 28px $primary, 0 0 32px $primary;
+    }
+}
+
+.fact-glow {
+    animation: fact-glow-key 1s ease-in-out infinite alternate;
+}
+
+.views-margin-top {
+    margin-top: 5rem;
+}
+
+.footer-margin-bottom {
+    margin-bottom: 2rem;
+}
+
+.margin-top-15 {
+    margin-top: 1.5rem;
+}
+
+.margin-top-1 {
+    margin-top: 1rem;
+}
+
+.word-break-all {
+    word-break: break-all;
+}

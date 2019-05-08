@@ -1,0 +1,136 @@
+<noscript>
+    <style>html {overflow: hidden !important;}</style>
+    <div class="modal is-active">
+        <div class="modal-background"></div>
+        <div class="modal-content container">
+            <div class="box">
+                <article class="media">
+                    <div class="media-content has-text-centered">
+                        Cette page nécessite javascript pour fonctionner.<br>
+                        <a href="/">Retourner à l'accueil</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</noscript>
+<div class="modal" id="generate-password-information">
+    <div class="modal-background" data-modal="generate-password-information"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Informations</p>
+            <button class="delete" aria-label="close" data-modal="generate-password-information"></button>
+        </header>
+        <section class="modal-card-body">
+            <p>
+                Les mots de passe générés ne sont bien évidement pas sauvegardés.<br>
+                De toute façon c'est entièrement géré en javascript, donc coté client, ce qui fait que le code est accessible à tout le monde.<br><br>
+                Pour les curieux et pour vous éviter de chercher dans le javascript minified, voici le code qui génère les mots de passe.
+            </p>
+            <pre>
+                <code class="js">
+var lowerString = 'abcdefghjkmnpqrstuvwxyz';
+var upperString = 'ABCDEFGHJKMNPQRSTUVWXYZ';
+var specialString = ',;:!?.$/*-+&@_+;./*&?$-!,';
+var numberString = '234567892345678923456789';
+
+function GeneratePassword() {
+    if ( lowerLength == 0 && upperLength == 0 && specialLength == 0 && numberLength == 0 ) {
+        return '*facepalm*';
+    }
+    var password = '';
+    for (var i = lowerLength; i > 0; --i) password += lowerString[Math.floor(Math.random() * lowerString.length)];
+    for (var i = upperLength; i > 0; --i) password += upperString[Math.floor(Math.random() * upperString.length)];
+    for (var i = specialLength; i > 0; --i) password += specialString[Math.floor(Math.random() * specialString.length)];
+    for (var i = numberLength; i > 0; --i) password += numberString[Math.floor(Math.random() * numberString.length)];
+    var i, passwordShuffled = '';
+    const len = password.length - 1;
+    for (i = 0; i < len; i ++) {
+        const r = Math.random() * password.length | 0;
+        passwordShuffled += password[r];
+        password = password.slice(0, r) + password.slice(r + 1);
+    }
+    return passwordShuffled;
+}
+                </code>
+            </pre>
+        </section>
+        <footer class="modal-card-foot">
+            <button class="button" data-modal="generate-password-information">Fermer</button>
+        </footer>
+    </div>
+</div>
+<section class="views-margin-top hero is-primary">
+    <div class="hero-body">
+        <div class="container is-large">
+            <h1 class="title">Générateur de mot de passe</h1>
+            <h2 class="subtitle">Génère un mot de passe aléatoire, sans "1" "i" "o" et "0"</h2>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li>
+                    <a href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Accueil</span>
+                    </a>
+                </li>
+                <li class="is-active">
+                    <a href="#">
+                        <span class="icon is-small">
+                            <i class="fas fa-lock" aria-hidden="true"></i></i>
+                        </span>
+                        <span>Générateur de mot de passe</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>
+<section class="container margin-top-15">
+    <div class="box">
+        <article class="media">
+            <div class="media-content">
+                <div class="content">
+                    <div id="lower-slider"></div>
+                    <p><div class="well well-sm">Nombre de lettres en minuscules: <span id="lower-length">4</span></div></p>
+                </div>
+                <div class="is-divider"></div>
+                <div class="content">
+                    <div id="upper-slider"></div>
+                    <p><div class="well well-sm">Nombre de lettres en majuscules: <span id="upper-length">4</span></div></p>
+                </div>
+                <div class="is-divider"></div>
+                <div class="content">
+                    <div id="special-slider"></div>
+                    <p><div class="well well-sm">Nombre de charactères spéciaux: <span id="special-length">4</span></div></p>
+                </div>
+                <div class="is-divider"></div>
+                <div class="content">
+                    <div id="number-slider"></div>
+                    <p><div class="well well-sm">Nombre de chiffres: <span id="number-length">4</span></div></p>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="is-large has-text-centered">
+        <button class="button" id="generate-password">Générer un mot de passe de 16 charactères</button>
+        <button class="button" data-modal="generate-password-information">Informations</button>
+    </div>
+    <div class="box margin-top-1">
+        <article class="media">
+            <div class="media-content">
+                <div class="content is-large has-text-centered block-with-text">
+                    <h1 class="has-text-grey-lighter word-break-all"><span id="the-password">----------------</span></h1>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<script>hljs.initHighlightingOnLoad();</script>
+<%- contentFor('pageTitle') %>Générateur de mot de passe
