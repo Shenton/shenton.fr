@@ -26,7 +26,8 @@
     "path": "^0.12.7",
     "pm2": "^3.5.0",
     "rotating-file-stream": "^1.4.1",
-    "tar": "^4.4.8"
+    "tar": "^4.4.8",
+    "uglify-es": "^3.3.9"
   },
   "devDependencies": {
     "bulma": "^0.7.4",

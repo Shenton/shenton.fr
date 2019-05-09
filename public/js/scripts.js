@@ -27,9 +27,9 @@ $(function() {
         for (var i = specialLength; i > 0; --i) password += specialString[Math.floor(Math.random() * specialString.length)];
         for (var i = numberLength; i > 0; --i) password += numberString[Math.floor(Math.random() * numberString.length)];
         var i, passwordShuffled = '';
-        const len = password.length - 1;
+        var len = password.length - 1;
         for (i = 0; i < len; i ++) {
-            const r = Math.random() * password.length | 0;
+            var r = Math.random() * password.length | 0;
             passwordShuffled += password[r];
             password = password.slice(0, r) + password.slice(r + 1);
         }
