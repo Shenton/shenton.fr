@@ -10,7 +10,7 @@ const jsonfile = require('jsonfile');
 const geoip = require('geoip-lite');
 const minify = require('express-minify');
 const uglifyEs = require('uglify-es');
-var minifyHTML = require('express-minify-html');
+const minifyHTML = require('express-minify-html');
 
 // Main app object
 var app = express();
@@ -41,7 +41,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // Minify
-//if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'production') {
     app.use(minifyHTML({
         override:      true,
         exception_url: false,
@@ -51,13 +51,13 @@ app.use(cookieParser());
             collapseBooleanAttributes: true,
             removeAttributeQuotes:     true,
             removeEmptyAttributes:     true,
-            minifyJS:                  true
+            minifyJS:                  false
         }
     }));
     app.use(minify({
         uglifyJsModule: uglifyEs,
     }));
-//}
+}
 
 // Public directory
 app.use('/assets', express.static(path.join(__dirname, 'public')));
