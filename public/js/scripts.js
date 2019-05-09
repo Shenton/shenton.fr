@@ -27,7 +27,7 @@ $(function() {
         for (var i = specialLength; i > 0; --i) password += specialString[Math.floor(Math.random() * specialString.length)];
         for (var i = numberLength; i > 0; --i) password += numberString[Math.floor(Math.random() * numberString.length)];
         var i, passwordShuffled = '';
-        var len = password.length - 1;
+        var len = password.length;
         for (i = 0; i < len; i ++) {
             var r = Math.random() * password.length | 0;
             passwordShuffled += password[r];
@@ -107,8 +107,8 @@ $(function() {
     $('#generate-password').click(function() {
         $('#the-password').fadeOut({
             duration: 200,
-            done: function(){
-                $(this).html(GeneratePassword()).fadeIn({
+            done: function() {
+                $(this).val(GeneratePassword()).fadeIn({
                     duration: 200,
                     queue: true
                 });
@@ -128,20 +128,58 @@ $(function() {
     });
 
     // Modal logic
-    function ModalToggleClass(modal) {
-        modal = '#' + modal;
-        if ($(modal).hasClass('is-active')) {
+    function ModalToggleClass(id) {
+        if ($(id).hasClass('is-active')) {
             $('html').removeClass('is-clipped');
-            $(modal).removeClass('is-active');
+            $(id).removeClass('is-active');
         } else {
             $('html').addClass('is-clipped');
-            $(modal).addClass('is-active');
+            $(id).addClass('is-active');
         }
     }
 
     $('button[data-modal], div.modal-background').click(function() {
-        var modal = $(this).attr('data-modal');
-        ModalToggleClass(modal);
+        var id = '#' + $(this).attr('data-modal');
+        ModalToggleClass(id);
+    });
+
+    // Button copy to clipboard logic
+    var buttonCopyTimeout = false;
+    function ButtonCopyResponse(obj, content, noCallback) {
+        obj.fadeOut({
+            duration: 200,
+            done: function() {
+                $(this).html(content).fadeIn({
+                    duration: 200,
+                    queue: true
+                });
+                if (!noCallback) {
+                    if ( buttonCopyTimeout ) {clearTimeout(buttonCopyTimeout);}
+                    buttonCopyTimeout = setTimeout(ButtonCopyResponse, 2000, obj, 'Copier', true);
+                } else {
+                    obj.parent().removeClass('is-danger');
+                    obj.parent().removeClass('is-success');
+                    obj.parent().addClass('is-primary');
+                    buttonCopyTimeout = false;
+                }
+            }
+        });
+    }
+
+    $('button[data-copy]').click(function() {
+        var id = '#' + $(this).attr('data-copy');
+        $(id).select();
+        var copied = document.execCommand('copy');
+
+        if (copied) {
+            $(this).removeClass('is-primary');
+            $(this).addClass('is-success');
+            ButtonCopyResponse($(this).children(), '<i class="fas fa-check"></i>');
+        } else {
+            $(this).removeClass('is-primary');
+            $(this).addClass('is-danger');
+            ButtonCopyResponse($(this).children(), '<i class="fas fa-times"></i>');
+        }
     });
 
     // Cookie consent

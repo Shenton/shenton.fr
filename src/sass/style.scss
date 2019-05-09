@@ -15,7 +15,7 @@ $navbarbg: rgba(10, 17, 19, 0.75);
 $primary: #0eb2bb;
 $link: #c77c0d;
 $text: #cccccc;
-$link-hover: #1f1f1f;
+$link-hover: #363636;
 $strong-color: $text;
 $body-background-color: $bodybg;
 $title-color: $bodybg;
@@ -28,6 +28,7 @@ $navbar-dropdown-item-hover-color: $link;
 $navbar-dropdown-border-top: 2px solid $primary;
 $navbar-item-color: $text;
 $navbar-dropdown-boxed-shadow: 0 8px 8px rgba($primary, 0.1), 0 0 0 1px rgba($primary, 0.1);
+$navbar-burger-color: $primary;
 
 $box-color: $text;
 $box-background-color: #353331;
@@ -45,13 +46,18 @@ $modal-card-head-background-color: $primary;
 $modal-card-body-background-color: $bodybg;
 $pre-background: $bodybg;
 
+$button-focus-border-color: $primary;
+$button-focus-box-shadow-color: $text;
+
+$input-color: $link-hover;
+$input-background-color: $text;
+
 //@import "../../node_modules/bulma/bulma.sass";
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
 
 @import "../../node_modules/bulma/sass/base/_all.sass";
 
 @import "../../node_modules/bulma/sass/components/breadcrumb.sass";
-@import "../../node_modules/bulma/sass/components/level.sass";
 @import "../../node_modules/bulma/sass/components/modal.sass";
 @import "../../node_modules/bulma/sass/components/navbar.sass";
 
@@ -62,8 +68,9 @@ $pre-background: $bodybg;
 @import "../../node_modules/bulma/sass/elements/image.sass";
 @import "../../node_modules/bulma/sass/elements/table.sass";
 @import "../../node_modules/bulma/sass/elements/title.sass";
+@import "../../node_modules/bulma/sass/elements/form.sass";
 
-@import "../../node_modules/bulma/sass/grid/tiles.sass";
+@import "../../node_modules/bulma/sass/grid/_all.sass";
 
 @import "../../node_modules/bulma/sass/layout/_all.sass";
 
@@ -118,6 +125,7 @@ pre {
     margin-top: 1rem;
 }
 
-.word-break-all {
-    word-break: break-all;
+.min-width-105 {
+    //display: inline-block;
+    min-width: 105px;
 }

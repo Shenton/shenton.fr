@@ -44,7 +44,7 @@ function GeneratePassword() {
     for (var i = specialLength; i > 0; --i) password += specialString[Math.floor(Math.random() * specialString.length)];
     for (var i = numberLength; i > 0; --i) password += numberString[Math.floor(Math.random() * numberString.length)];
     var i, passwordShuffled = '';
-    var len = password.length - 1;
+    var len = password.length;
     for (i = 0; i &lt; len; i ++) {
         var r = Math.random() * password.length | 0;
         passwordShuffled += password[r];
@@ -55,9 +55,6 @@ function GeneratePassword() {
                 </code>
             </pre>
         </section>
-        <footer class="modal-card-foot">
-            <button class="button" data-modal="generate-password-information">Fermer</button>
-        </footer>
     </div>
 </div>
 <section class="views-margin-top hero is-primary">
@@ -98,35 +95,36 @@ function GeneratePassword() {
             <div class="media-content">
                 <div class="content">
                     <div id="lower-slider"></div>
-                    <p><div class="well well-sm">Nombre de lettres en minuscules: <span id="lower-length">4</span></div></p>
+                    <p>Nombre de lettres en minuscules: <span id="lower-length">4</span></p>
                 </div>
                 <div class="is-divider"></div>
                 <div class="content">
                     <div id="upper-slider"></div>
-                    <p><div class="well well-sm">Nombre de lettres en majuscules: <span id="upper-length">4</span></div></p>
+                    <p>Nombre de lettres en majuscules: <span id="upper-length">4</span></p>
                 </div>
                 <div class="is-divider"></div>
                 <div class="content">
                     <div id="special-slider"></div>
-                    <p><div class="well well-sm">Nombre de charactères spéciaux: <span id="special-length">4</span></div></p>
+                    <p>Nombre de charactères spéciaux: <span id="special-length">4</span></p>
                 </div>
                 <div class="is-divider"></div>
                 <div class="content">
                     <div id="number-slider"></div>
-                    <p><div class="well well-sm">Nombre de chiffres: <span id="number-length">4</span></div></p>
+                    <p>Nombre de chiffres: <span id="number-length">4</span></p>
                 </div>
             </div>
         </article>
     </div>
     <div class="is-large has-text-centered">
-        <button class="button" id="generate-password">Générer un mot de passe de 16 charactères</button>
-        <button class="button" data-modal="generate-password-information">Informations</button>
+        <button class="button is-primary is-outlined" id="generate-password">Générer un mot de passe de 16 charactères</button>
+        <button class="button is-primary is-outlined" data-modal="generate-password-information">Informations</button>
     </div>
     <div class="box margin-top-1">
         <article class="media">
             <div class="media-content">
-                <div class="content is-large has-text-centered block-with-text">
-                    <h1 class="has-text-grey-lighter word-break-all"><span id="the-password">----------------</span></h1>
+                <div class="is-flex">
+                    <input class="input is-primary is-large" type="text" placeholder="" id="the-password" readonly>
+                    <button class="button is-large is-primary is-outlined min-width-105" data-copy="the-password"><span>Copier</span></button>
                 </div>
             </div>
         </article>

@@ -2,7 +2,6 @@
 var headers = req.headers;
 var ip = headers['x-real-ip'] || req.ip || '0.0.0.0';
 var browser = headers['user-agent'] || 'Inconnu';
-var referer = headers['referer'] || 'Inconnu';
 var geo = geoip.lookup(ip);
 var country = geo ? geo.country: 'Inconnu';
 var region = geo ? geo.region: 'Inconnu';
@@ -46,7 +45,6 @@ var region = geo ? geo.region: 'Inconnu';
                 <div class="content">
                     <p><strong>IP:</strong> <%= ip %></p>
                     <p><strong>Navigateur:</strong> <%= browser %></p>
-                    <p><strong>Référand:</strong> <%= referer %></p>
                     <p><strong>Pays:</strong> <%= country %></p>
                     <p><strong>Région:</strong> <%= region %></p>
                 </div>
