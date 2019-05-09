@@ -1,17 +1,11 @@
 <%
 var headers = req.headers;
-var ip = headers['x-real-ip'] || req.ip;
+var ip = headers['x-real-ip'] || req.ip || '0.0.0.0';
+var browser = headers['user-agent'] || 'Inconnu';
+var referer = headers['referer'] || 'Inconnu';
 var geo = geoip.lookup(ip);
-var country = geo ? geo.country: "Unknown";
-var region = geo ? geo.region: "Unknown";
-
-function displayHeaders() {
-    var out = '';
-    for (var key in headers) {
-        out = out + '<tr><td>' + key + '</td><td>' + headers[key] + '</td></tr>';
-    }
-    return out;
-}
+var country = geo ? geo.country: 'Inconnu';
+var region = geo ? geo.region: 'Inconnu';
 %>
 <section class="views-margin-top hero is-primary">
     <div class="hero-body">
@@ -51,34 +45,10 @@ function displayHeaders() {
             <div class="media-content">
                 <div class="content">
                     <p><strong>IP:</strong> <%= ip %></p>
+                    <p><strong>Navigateur:</strong> <%= browser %></p>
+                    <p><strong>Référand:</strong> <%= referer %></p>
                     <p><strong>Pays:</strong> <%= country %></p>
                     <p><strong>Région:</strong> <%= region %></p>
-                </div>
-            </div>
-        </article>
-    </div>
-    <div class="box">
-        <article class="media">
-            <div class="media-content">
-                <div class="content">
-                    <p><strong>Headers:</strong></p>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th class="has-text-grey-lighter">Nom</th>
-                                <th class="has-text-grey-lighter">Valeur</th>
-                            </tr>
-                        </thead>
-                        <tfoot>
-                            <tr>
-                                <th class="has-text-grey-lighter">Nom</th>
-                                <th class="has-text-grey-lighter">Valeur</th>
-                            </tr>
-                        </tfoot>
-                        <tbody>
-                            <%- displayHeaders() %>
-                        </tbody>
-                    </table>
                 </div>
             </div>
         </article>
