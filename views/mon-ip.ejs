@@ -1,8 +1,7 @@
 <%
 var headers = req.headers;
-//var ip = JSON.stringify(req.ip);
-var ip = req.ip;
-var geo = geoip.lookup(req.ip);
+var ip = headers['x-real-ip'] || req.ip;
+var geo = geoip.lookup(ip);
 var country = geo ? geo.country: "Unknown";
 var region = geo ? geo.region: "Unknown";
 
