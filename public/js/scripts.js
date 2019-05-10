@@ -168,8 +168,12 @@ $(function() {
 
     $('button[data-copy]').click(function() {
         var id = '#' + $(this).attr('data-copy');
-        $(id).select();
-        var copied = document.execCommand('copy');
+        var copied = false;
+
+        if ( $(id).val() != '' ) {
+            $(id).select();
+            copied = document.execCommand('copy');
+        }
 
         if (copied) {
             $(this).removeClass('is-primary');
@@ -181,6 +185,12 @@ $(function() {
             ButtonCopyResponse($(this).children(), '<i class="fas fa-times"></i>');
         }
     });
+
+    // Reset password input on reload
+    var perfEntries = performance.getEntriesByType("navigation");
+    if (perfEntries[0].type == 'reload') {
+        $('#the-password').val('');
+    }
 
     // Cookie consent
     window.cookieconsent.initialise({
@@ -201,5 +211,5 @@ $(function() {
             "link": "Info sur les cookies (CNIL)",
             "href": "//www.cnil.fr/fr/cookies-comment-mettre-mon-site-web-en-conformite"
         }
-        });
+    });
 });
